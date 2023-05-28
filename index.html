@@ -89,8 +89,6 @@
         padding: 40px;
         }
         
-       
-        
         .container-3{display: flex;
         height: 250px;
         width: 780px;
@@ -149,6 +147,14 @@
         color: #E5E7EB;
         justify-content: center;
         align-items: center;}
+        div.input{align-items: center;
+        justify-content: center;
+    margin-bottom: 40px;
+background-color: #3882f6;
+border-radius: 8px;
+COLOR: #E5E7EB;}
+text.input-button{border-radius: 8px;
+background-color: #ff45ff;}
         
         </style>
 </head>
@@ -192,6 +198,11 @@
              <button class="Sign-Up">Sign up</button>
             
              </div>
+             <div class="input">
+                <input type="text">
+                <button type="input-button"> search for your choice of phone here!</button> </div>
+             </div>
+             
  </span>       
         
 
@@ -238,5 +249,16 @@
 </nav>
 <nav class="footer"><span>Copyright &copy; ~Ahamed Yussif, Grassroot academy, landing page project 2023.
      <p>contact:</p>             <P> email: </P>  </span></nav>
-</body>
+
+
+<script>
+    const button=document.querySelector("button");
+    function greet(){
+        const name=prompt("What is your name?");
+        alert(`Hello ${name}, nice to see you!`);
+    }
+    button.addEventListener("click", greet);
+</script>
+
+    </body>
 </html>
